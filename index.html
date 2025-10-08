@@ -1,23 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to My Site</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leafy Landscapes ATX | Lawn & Landscape Experts</title>
   <style>
     body {
-      font-family: sans-serif;
-      background: #f2f2f2;
+      margin: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      background-color: #f8fff8;
       color: #333;
-      text-align: center;
-      padding: 50px;
     }
-    h1 { color: #007acc; }
+
+    /* ===== HEADER ===== */
+    header {
+      background-color: #b8e986;
+      color: #2e5e31;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    /* ===== NAVIGATION ===== */
+    nav {
+      background-color: #2e5e31;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #f8fff8;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== SECTIONS ===== */
+    section {
+      padding: 50px 20px;
+      max-width: 950px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      color: #2e5e31;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* ===== SERVICES ===== */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+
+    .service-box {
+      background: white;
+      border: 2px solid #b8e986;
+      border-radius: 10px;
+      padding: 20px;
+      transition: transform 0.2s;
+    }
+
+    .service-box:hover {
+      transform: scale(1.03);
+    }
+
+    .service-box h3 {
+      color: #2e5e31;
+      margin-bottom: 10px;
+    }
+
+    /* ===== GALLERY ===== */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid #b8e986;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* ===== CONTACT ===== */
+    .contact {
+      text-align: center;
+      background-color: #e7f9e7;
+      padding: 40px 20px;
+      border-radius: 10px;
+    }
+
+    .contact a {
+      color: #2e5e31;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .quote-button {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #2e5e31;
+      color: #f8fff8;
+      padding: 12px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+
+    .quote-button:hover {
+      background-color: #3e7e41;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background-color: #2e5e31;
+      color: #f8fff8;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
   </style>
 </head>
 <body>
-  <h1>Hello World 👋</h1>
-  <p>This website is hosted for free using GitHub Pages.</p>
-  <p>Edit <code>index.html</code> anytime to update it!</p>
+  <header>
+    <h1>Leafy Landscapes ATX</h1>
+    <p>Transforming Austin lawns with care, quality, and expertise.</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-box">
+        <h3>Lawn Maintenance</h3>
+        <p>Weekly or bi-weekly mowing, edging, and cleanup to keep your lawn picture-perfect.</p>
+      </div>
+      <div class="service-box">
+        <h3>Lawn Leveling</h3>
+        <p>Smooth out uneven yards for a safer, more professional look and improved drainage.</p>
+      </div>
+      <div class="service-box">
+        <h3>Landscape Design</h3>
+        <p>Custom designs to enhance your home’s curb appeal and outdoor enjoyment.</p>
+      </div>
+      <div class="service-box">
+        <h3>Mulch & Rock Installation</h3>
+        <p>Professional mulch, rock, or stone installation to refresh your yard’s appearance.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Before & After</h2>
+    <p style="text-align:center;margin-bottom:25px;">A few transformations from our recent projects.</p>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/400x250?text=Before+1" alt="Before project photo" />
+      <img src="https://via.placeholder.com/400x250?text=After+1" alt="After project photo" />
+      <img src="https://via.placeholder.com/400x250?text=Before+2" alt="Before project photo" />
+      <img src="https://via.placeholder.com/400x250?text=After+2" alt="After project photo" />
+    </div>
+    <p style="text-align:center;margin-top:15px;font-size:0.9em;">
+      Replace these placeholder images with your real before/after work later!
+    </p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Leafy Landscapes ATX is a locally owned landscaping business serving Kyle, San Marcos, and surrounding Austin areas.  
+      We specialize in lawn care, leveling, and hardscape enhancements to keep your yard looking its best year-round.  
+      With a focus on honest work and reliable service, we treat every property like our own.
+    </p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Get in Touch</h2>
+    <p><strong>Phone:</strong> <a href="tel:15123618466">(512) 361-8466</a></p>
+    <p><strong>Email:</strong> <a href="mailto:leafylandscapess@gmail.com">leafylandscapess@gmail.com</a></p>
+    <p>Serving Kyle, San Marcos, and the greater Austin area 🌿</p>
+
+    <a class="quote-button" href="mailto:leafylandscapess@gmail.com?subject=Request%20a%20Quote%20-%20Leafy%20Landscapes%20ATX&body=Hi%20Leafy%20Landscapes%20ATX%2C%0A%0AI’d%20like%20to%20request%20a%20quote%20for%3A%0A%0A-%20Service%20Type%3A%20%0A-%20Location%3A%20%0A-%20Preferred%20Date%3A%20%0A%0AThanks!">
+      📩 Request a Quote
+    </a>
+  </section>
+
+  <footer>
+    <p>© 2025 Leafy Landscapes ATX | Designed & hosted free with GitHub Pages</p>
+  </footer>
 </body>
 </html>
